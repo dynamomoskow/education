@@ -1,0 +1,13 @@
+uname -r(revision)
+uname -a(all)
+w (какие пользовтаели,нагрузка и т.д)
+lsmode (список модулей)
+cd
+ls
+find
+pwd
+file
+which date(где нах-ся программа date)
+ldd (показывает какая библиотека используется в программе)
+strace (system)
+lstrace(lybrary)
