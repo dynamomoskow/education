@@ -1,4 +1,4 @@
-DHCP(Dynamic Host Configuration Protocol)-протокол динамической конфигурации хостов
+**DHCP(Dynamic Host Configuration Protocol)**-протокол динамической конфигурации хостов
 Для работы в сети компьютеру нужен Ip-адрес
 Методы назначения Ip-адресов:
 -вручную
