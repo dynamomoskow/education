@@ -1,0 +1,11 @@
+Абсолютное путевое имя-от корня до файла
+mount
+strace 
+ltrace
+ps (показывает количество процессов)
+cat cpuinfo | less (перенаправление в постраничный вывод)
+wc -l cpuinfo (сколько строк в файле)
+whatis intro
+lsusb
+lspci
+strace -e open lspci -n
