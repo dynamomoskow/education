@@ -21,3 +21,4 @@ find / -perm /u+s 2> /dev/null
 
 > >> -вывод 
 < << -ввод
+find / -perm /u+s 2> /dev/null | mail unix@avalon.ru
