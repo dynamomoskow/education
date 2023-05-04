@@ -16,3 +16,5 @@ execute - проход в каталог и обращение к обьекту
 
 setfacl -m g:daemon:rw STUDENT (добавляем группе демон права на файл студент,читать писать)
 getfacl STUDENT
+
+find / -perm /u+s 2> /dev/null
