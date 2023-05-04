@@ -8,3 +8,5 @@ chmod u+x,g+w,o= 1.txt(дать юзеру права запускать, гру
 chsh -изменение командой оболочки
 passwd- смена пароля
 which passwd(где лежит программа passwd)
+find /bin /sbin /usr/bin/ /usr/sbin -perm /u+s -ls
+
