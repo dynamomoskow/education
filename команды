@@ -2,3 +2,6 @@ openssl s_client -connect www.championat.com:443
 
 openssl s_client -starttls smtp -connect smtp.gmail.com:587
 
+find  -maxdepth 1 -type f -name ".*" |wc -l 
+ls -A | grep '^\.' | wc
+
