@@ -25,6 +25,7 @@ chmod g+x file
 chmod a=rw file
 chmod o-r file
 chmod g+x,a=rw file\
+chmod 700 file
 ls -il -  показывает  inode
 tune2fs
 sudo tune2fs -l /dev/nvme0n1p5
@@ -32,3 +33,6 @@ ln 1 hardlink1 -  жесткая ссылка
 SUID(u+s)
 SGID(g+s)
 sticky bit(+t)
+nano .profilex
+which file
+
