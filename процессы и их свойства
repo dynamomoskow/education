@@ -1,0 +1,26 @@
+Процесс- виртуальная среда ,для выполнеиния программы или ее части.
+Используется в многозадачных операционных системах
+ldd /usr/bin/cal - дерево зависимости
+top - показывает процессы
+ps 
+ps a
+ps x
+ps ax -все процессы в операц системе
+ps u -процессы для пользователя
+ps j -процессы упрвления заданием
+ps o pid,tty,user,comm
+ps uf- построить в виде леса(кто кого запустил)
+ps up 2617 - что за процесс 2617
+ps wup 2617
+
+wd -рабочий каталог
+UMASK - реверсивная маска
+Environment -окружение
+VAR1,VAR2.. -переменная окружения
+PID - Process IDentifier
+PPID -Parent PID
+SID - Session IDentifier
+TTY - Терминал(управляющий)
+PGID - Process Group IDentifier
+TPGID-Terminal PGID (foreground group)
+NICE -Относительный приоритет(high -19, LOW 20)
