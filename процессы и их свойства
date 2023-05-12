@@ -24,3 +24,21 @@ TTY - Терминал(управляющий)
 PGID - Process Group IDentifier
 TPGID-Terminal PGID (foreground group)
 NICE -Относительный приоритет(high -19, LOW 20)
+RUID - Real UID
+Настоящий
+RGID - Real GID
+
+EUID - Effective UID
+Действующий
+EGID - Effective GID
+
+ps afo ruid,euid,rgid,egid,tt,comm
+ps afo ruser,euser,rgroup,egroup,tt,comm
+f- построить лес
+о-что нужо выводить
+t -  что отфильтровать(t pts/0 фильтр терминал)
+
+
+
+
+
