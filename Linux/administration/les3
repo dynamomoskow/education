@@ -1,6 +1,6 @@
 ssh-keygen
 сбор информации о системе:
-- TOp(d -delay, c - command, H - показать thread, M -  отсортировать по памяти, i - скрыть.показать idle процессы)
+- TOp(1- развернуть процессоры, d -delay, c - command, H - показать thread, M -  отсортировать по памяти, i - скрыть.показать idle процессы)
 - dstat
 - lostat
 - mpstat
