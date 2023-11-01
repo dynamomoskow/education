@@ -1,10 +1,11 @@
+ls -lh file (size file)
 ssh-keygen
 сбор информации о системе:
 - TOp(1- развернуть процессоры, d -delay, c - command, H - показать thread, M -  отсортировать по памяти, i - скрыть.показать idle процессы)
 - dstat
-- lostat
+- iostat
 - mpstat
-- df
+- df (-i, -h
 - mount
 - дополнительно
    - lscpu
