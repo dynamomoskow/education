@@ -35,6 +35,7 @@ SGID(g+s)
 sticky bit(+t)
 nano .profilex
 which file
+sudo usermod -aG wwww-data geek
 
 ПРАКТИКА
 
