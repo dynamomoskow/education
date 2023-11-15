@@ -1,0 +1,4 @@
+netstat -ntl
+sudo apt install mysql-server mysql-client mysql-common php7.0 php7.0-mysql
+sudo netstat -ntlp
+sudo systemctl stop apache2
