@@ -1,4 +1,10 @@
-netstat -ntl
+netsstat -tl -перечень прослушиваемыемых TCP портов
+netstat -ul - udp port
+netstat -ntul -номера портов без расшифровки добавляем  n
+netstat -x -список прослуш unix-сокетов
+netstat -ntua -список соединений во свсех состоянияз на теущ момент добавляем а
+nmap vk.com - сканирование портов
+cat /proc/sys/net/ipv4/ip_local_port_range -посмотреть диапазон портов
 sudo apt install mysql-server mysql-client mysql-common php7.0 php7.0-mysql
 sudo netstat -ntlp
 sudo systemctl stop apache2
