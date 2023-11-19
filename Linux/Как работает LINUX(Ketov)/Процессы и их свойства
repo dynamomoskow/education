@@ -4,3 +4,39 @@
 ldd /bin/date - от чего зависит программа date
 
 top
+
+ps a -process on the all terminal
+ps x - показывает даже процессы у которых нет терминала 
+ps u -формат определенных столбцов интересных для конечного пользователя
+ps j
+ps o pid,tty,user,comm (какие столбцы вывести)
+ps uf - построить в виду леса ,кто окго запустил
+ps up 774 (информация о процессе 774)
+ps wup 774(не обрезает путь,а переносит на другую строку)
+
+АТРИБУТЫ ПРОЦЕССА
+WD -рабочий каталог
+UMASK - реверсивная маска прав доступа
+Environment - ОКружение
+VAR1 VAR2 VAR3 - переменная окружения
+PID - process IDentifier
+PPID - PArent PID
+SID - Session IDentifier
+TTY - терминал(управляющий)
+PGID - Process Group IDentifier
+TPGID - Terminal PGID( foreground group)
+NICE -  относительный приоритет
+
+RUID - Real UID
+НАСТОЙЩИЙ
+RGID - REAL GID
+
+EUID - Effective UID
+Действующий
+EGID - Effective GID
+
+ps afo ruid,euid,rgid,egid,tt,comm
+ps afo ruser,euser,rgroup,egroup,tt,comm
+ps fo ruser,euser,rgroup,egroup,tt,comm t pts/1ps fo ruser,euser,rgroup,egroup,tt,comm t pts/1
+ 
+
