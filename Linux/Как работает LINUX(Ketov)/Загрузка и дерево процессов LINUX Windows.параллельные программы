@@ -1,0 +1,44 @@
+POST ROM Loader- Power On Self Test
+MBR loader
+PBR loader
+OS loader
+
+СИстемные процессы (vsz=0,tty=?)
+Ядро
+Vmlinuz
+Остов ядра
+Модули ядра (*.ko)
+INIT(PID=1)
+
+Процессы демоны(vsz =...,tty=?)
+SERVICE(daemons)
+
+Прикладные процессы(vsz=...,tty=...)
+GETTY(/sbin/getty) - обработчик терминального доступа
+
+SHELL(/bin/bash)
+
+ps u - формат пригодный для пользователя
+ps p1 u - процесс init
+
+
+WINDOWS
+
+POST rom loader
+MBR loader
+PBR loader
+
+OS loader
+
+ЯДРО 
+ ntoskrnl.exe
+Остов ядра
+Модули ядра(*.sys,*.dll)
+
+SMSS- Session manager SUb System(аналог INIT Linux)
+
+LOgon(winlogon.exe)
+CSRSS(csrss.exe) win32
+
+SHELL(explorer.exe) -командный интерпретатор
+SCM(services.exe) - Service Control Manager (управление службами)
