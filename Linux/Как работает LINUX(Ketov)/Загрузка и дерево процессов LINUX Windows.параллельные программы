@@ -42,3 +42,9 @@ CSRSS(csrss.exe) win32
 
 SHELL(explorer.exe) -командный интерпретатор
 SCM(services.exe) - Service Control Manager (управление службами)
+
+IPC - Inetr Process Communications
+
+Thread - нить 
+K.B thread 
+U.B. thread
