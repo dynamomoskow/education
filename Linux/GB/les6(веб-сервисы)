@@ -8,3 +8,17 @@ cat /proc/sys/net/ipv4/ip_local_port_range -посмотреть диапазо�
 sudo apt install mysql-server mysql-client mysql-common php7.0 php7.0-mysql
 sudo netstat -ntlp
 sudo systemctl stop apache2
+
+Создание таблицы:
+use mydatabase;
+create table mytable (id int not null auto_increment, txt varchar(100),
+n int, primary key (id));
+insert into mytable (txt,n) values('Lenina',25);
+insert into mytable (txt,n) values('Lesnoy',14);
+select * from mytable;
+
+mysql -u max -p mydatabase < cmd.sql (загрузка данных из файла)
+mysqldump -u max -p mydatabase > backup.sql (бекап)
+
+sudo mysqladmin -u root create newdb (новая база)
+sudo mysql -u root --default-character-set=utf8 newdb < backup.sql (загрузка бекапа)
