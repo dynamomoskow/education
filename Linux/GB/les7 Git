@@ -1,0 +1,7 @@
+GIT -распределенная система контроля версий
+ssh-keygen - создает ключи
+git clone git@github.com:dynamomoskow/geek.git
+git - посмотреть команды
+git add -A -добавить все файлы
+git commit
+git commit -m "Мой первый коммит из консоли"
