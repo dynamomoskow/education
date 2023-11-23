@@ -5,3 +5,7 @@ git - посмотреть команды
 git add -A -добавить все файлы
 git commit
 git commit -m "Мой первый коммит из консоли"
+git branch name - создает ветку name
+git checkout name - переключиться
+
+git push -u origin Разработка
