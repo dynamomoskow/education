@@ -1,3 +1,21 @@
 SSH 22 port
 CRYPTO защита данных канала
 sudo poweroff - выключить серв
+
+X Window System
+
+X Host
+X Client - Графические программы (кленты)
+X Session - графический сеанс
+Windows Manager -оконнный менеджер
+X lib - библиотека протокола
+Библиотеки декорирования(виджетов)(X view XT+Xaw Qt Gtk+ ...)
+Desktop environment (GNOME CDE KDE Openlook(oenwindows) XFCE ...)
+
+X Terminal
+X Server - сервер графического ввода-вывода
+-обладает графическим устройвом ввода и вывода
+
+export DISPLAY=192.168.1.44:0
+xhost +
+xterm
