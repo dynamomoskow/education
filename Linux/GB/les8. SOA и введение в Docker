@@ -6,3 +6,12 @@ CDN - content de;ivery network
 Витруализация
 1-Аппартаная виртуализация, паравиртуализация(KVM, XEN)
 2-КОнтейнеры (OpenVZ, LXC, Docker)
+
+docker info
+docker ps - запущенные контейнеры
+docker images - список образовв
+docker search nginx
+docker pull nginx
+netstat -ntl
+docker run -d --name nginx -p 808:80 -v /var/www/html:/usr/share/nginx/html nginx
+docker ps
