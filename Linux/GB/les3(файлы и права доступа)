@@ -37,6 +37,13 @@ nano .profilex
 which file
 sudo usermod -aG wwww-data geek
 
+student@studentserver:/var/www/html$ sudo chgrp -R www-data ../html
+student@studentserver:/var/www/html$ sudo chmod g+s ../html
+student@studentserver:/var/www/html$ sudo chmod -R g+w ../html
+
+
+
+
 ПРАКТИКА
 
 1
