@@ -1,0 +1,64 @@
+ПОрядок загрузки
+1. BIOS/UEFI
+2. MBR/EFI - раздел
+3. LILO/GRUB
+4. Ядро
+
+чтобы зайти в grub зажать шифт
+
+Скрипты /etc/grub.d/*
+- 10_linux, 30_os-prober - поиск ядер Linux и других ОС на разделах диска
+- 40_custom - добавлять свои пункты
+- 05_debian_theme - задает внешний вид загрузчика
+
+Консольные команды GRUB:
+-ls
+-cat
+-linux
+-initrd
+-boot
+-set
+-chainloader
+
+ПАраметрры /etc/default/grub
+-GRUB_DEFAULT - номер (имя) пункта загрузки по умолчанию
+-GRUB_HIDDEN_TIMEOUT=0 - грузить без задержки если 1 система
+-GRUB_HIDDEN_TIMEOUT_QUIET=true - показывать таймер во время паузы
+-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" - задать параметры ядра
+
+Система инициализции init:
+-init Sys V
+-upstart
+-Systemd
+
+Уровни выполнения
+0- останов системы
+1, S - однопользовательский режим
+2-3 - многопользовательский режим
+4-5(обычно 5) - X-Server
+6 - перезагрузка
+7-9 - не используются
+
+Управление сервисами
+service apache2 start/stop/restart/reload/status
+
+Upstart
+-start/stop/restart/reload/status apache2
+
+Архитектура systemd
+systemd Utilitles
+-systemctl(для управления демонами)
+-journalctl
+-notify( для оповещения состояния демона)
+-analyze
+-cgls(для просмотра используемых реусрсов)
+-loginctl
+-nspawn
+
+systemd Daemons
+-systemd
+-journald
+-networkd
+-logind
+-user session
+
