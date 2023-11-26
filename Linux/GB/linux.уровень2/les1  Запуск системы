@@ -62,3 +62,17 @@ systemd Daemons
 -logind
 -user session
 
+systemctl status sshd
+systemctl enable ssh.service 
+systemctl disable ssh.service 
+vi /etc/systemd/system/sshd.service
+
+journalctl --since=yesterday - посмотреть логи со вчера
+journalctl --since=16:00 --until=20:00
+
+tail -f /var/log/syslog
+journalctl -f
+
+vi /etc/systemd/system/syslog.service
+vi /etc/logrotate.conf
+
