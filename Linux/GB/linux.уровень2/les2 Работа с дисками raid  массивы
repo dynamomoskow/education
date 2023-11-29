@@ -1,0 +1,19 @@
+Файловые системы
+1 Нежурналируемые
+а. FAT
+b. EXFAT
+c. EXT2
+2. Журналируемые
+a. NTFS
+b. EXT3
+c. EXT4
+d. XFS
+
+RAID
+RAID 0
+RAID 1
+RAID 10
+RAID 3,4
+RAID 5
+...
+утилиты: mdadm
