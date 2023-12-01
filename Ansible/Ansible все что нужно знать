@@ -1,2 +1,16 @@
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
 sudo pip3 install ansible
+
+ansible all_groups -i hosts -m setup
+ansible all -i hosts -m shell -a "uptime"
+ansible all -i hosts -m command -a "cal"
+ansible all -i hosts -m file -a "path=/root/ansible-file.txt state=touch" -b
+sudo visudo 
+
+ansible test -i hosts -m copy -a "src=file123 dest=/home mode=777" - копирование файла 
+ansible test -i hosts -m copy -a "src=file123 dest=/home mode=600" -b
+
+mkdir group_vars
+mkdir test
+
+ansible all -i /home/max/ansible/hosts -m debug -a "var=dev"
