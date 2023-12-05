@@ -14,3 +14,20 @@ mkdir group_vars
 mkdir test
 
 ansible all -i /home/max/ansible/hosts -m debug -a "var=dev"
+ansible all -i /home/max/ansible/hosts -m debug -a "var=ansible_host"
+
+- name: Update cache
+    apt:
+      update_cache: yes
+
+  - name: Upgrade
+    apt:
+      upgrade: yes
+
+- name: Remove folder
+    ansible.builtin.file:
+      path: "/home/{{item}}"
+      state: absent
+    loop:
+      - dir1
+      - dir2
