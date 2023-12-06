@@ -31,3 +31,5 @@ ansible all -i /home/max/ansible/hosts -m debug -a "var=ansible_host"
     loop:
       - dir1
       - dir2
+
+ansible-galaxy init first_setup - создать роль first_setup
