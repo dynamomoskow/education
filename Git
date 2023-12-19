@@ -9,6 +9,7 @@ git branch -D name - delete name
 git checkout name - переключение между ветками
 git checkout -b name - создание ветки name и переключение на нее
 git merge name - соединить ветку с name
+git pull
 
 git remote add origin https://github.com/dynamomoskow/deploy_nginx.git
 git push -u origin master
