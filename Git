@@ -10,6 +10,8 @@ git checkout name - переключение между ветками
 git checkout -b name - создание ветки name и переключение на нее
 git merge name - соединить ветку с name
 
+git remote add origin https://github.com/dynamomoskow/deploy_nginx.git
+git push -u origin master
 
   git config --global user.email "you@example.com"
   git config --global user.name "Ваше Имя"
