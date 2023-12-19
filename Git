@@ -1,0 +1,19 @@
+git init -ииициализация репозитория Git
+git status
+git rm --cached file - 
+git add . 
+git commit -m "first commit"
+git branch -в какой ветке находишься
+git branch name - создание ветки name
+git branch -D name - delete name 
+git checkout name - переключение между ветками
+git checkout -b name - создание ветки name и переключение на нее
+git merge name - соединить ветку с name
+
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Ваше Имя"
+
+
+gitlens plagin
+
