@@ -62,3 +62,21 @@ max@max-ThinkBook-15-G2-ITL:~/docker/nginx$ docker run -v ${PWD}:/usr/share/ngin
 
 docker run -it --rm busybox - запуск контейнера и автоматическое удаление при остановке
 \ - слеш разбивает команду на строки
+
+ЭТАПЫ СОЗДАНИЯ ОБРАЗОВ:
+- Для создания образа необходим Dockerfile
+- Обычно Dockerfile помещают в корне папки приложения
+- Dockerfile содержит инструкции по созданию образа
+- При создании образа можно указать имя и тег для образа
+- На основании готового образа можно создавать контейнеры
+
+Пример:
+
+FROM python:alpine
+WORKDIR /app
+COPY . .
+CMD [ "python", "main.py" ]
+
+---------------
+docker build .
+docker build . -t name_image:teg(пример 4.1.3)
