@@ -55,3 +55,10 @@ docker run -d --name my_nginx nginx - создается контейнер ngin
 docker run -d -p 8080:80 --name nginx8080 nginx 
 
 code . - vscode открыть папку в рабочую область
+
+max@max-ThinkBook-15-G2-ITL:~/docker/nginx$ echo ${PWD}
+/home/max/docker/nginx
+max@max-ThinkBook-15-G2-ITL:~/docker/nginx$ docker run -v ${PWD}:/usr/share/nginx/html -p 8080:80 -d nginx
+
+docker run -it --rm busybox - запуск контейнера и автоматическое удаление при остановке
+\ - слеш разбивает команду на строки
