@@ -33,3 +33,25 @@ Docker - сервис для запуска приложений в контей
 - В репозитории хранятся разные версии образа
 - Разные версии помечаются разными тегами
 - Одна версия образа может иметь несколько тегов
+
+docker ps
+docker ps -a - показывает список запущенных и остановленных контейнеров
+docker images -показывает список ллокальных образов
+docker run hello-world (:latest)
+docker rm 202ed8eaf0e7 - удаляет контейнер с айди 202ed8eaf0e7,можно использовать имя
+docker container prune - удалить все контейнеры остановленные
+
+docker run -it busybox
+hostname -i
+
+NGINX
+docker run -d nginx -запуск контейнера в фоновом режиме
+docker container inspect 39fafcc6326b
+docker stop name or id
+docker kill
+docker exec -it 2ecf95cf5818 bash - запускает команду bash внутри запущенного контейнера
+/usr/share/nginx/html
+docker run -d --name my_nginx nginx - создается контейнер nginx  c именем my_nginx запущенный в фоновом режиме
+docker run -d -p 8080:80 --name nginx8080 nginx 
+
+code . - vscode открыть папку в рабочую область
