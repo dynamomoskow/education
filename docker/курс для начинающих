@@ -105,11 +105,31 @@ docker-compose down
 docker-compose up -d --build - пересобирание образа
 docker logs 7bae07363492
 
+Docker Network
 
+docker run nginx (bridge doker0: 172.17.0.0/16)
+docker run nginx --network=host (host ServerIp (10.15.11.12)
+docker run nginx --network= none
+macvlan
+ipvlan
+overlay
 
+Bridge
+docker network create --drive bridge NAME -создаем сеть бридж с именем нейм
+docker run --net myNAME nginx
 
+Host
+--drive host
 
+None
+--drive none
 
-
+docker network ls
+docker network create myNet01 
+docker network create --driver host myNethost
+docker network create -d null myNetnone
+docker network inspect myNet01 
+docker network create -d bridge --subnet 192.168.10.0/24 --gateway 192.168.10.1 myNet192
+docker network rm myNet01 myNet192
 
 
