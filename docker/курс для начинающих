@@ -131,5 +131,8 @@ docker network create -d null myNetnone
 docker network inspect myNet01 
 docker network create -d bridge --subnet 192.168.10.0/24 --gateway 192.168.10.1 myNet192
 docker network rm myNet01 myNet192
-
-
+docker run --rm -it --name container1 nicolaka/netshoot bash
+docker run --rm -it --name container1 --net myNet01 nicolaka/netshoot bash
+docker network connect myNet01 container1
+docker network disconnect 66b180365dc6d21ddddd11f85309b243a3e9dac6b571e25135d64ec2220ad3fc container1  (указывается NetworkID в инспект)
+docker network create -d macvlan --subnet 192.168.100.0/24 --gateway 192.168.100.1 --ip-range 192.168.100.99/32 -o parent=enp0s3 myMACvlan
