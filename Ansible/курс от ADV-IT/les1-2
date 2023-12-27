@@ -3,6 +3,7 @@ Pull: на управляемых серверах установлен Agent к
 Push: На управляемых серверах ничего не установлено, Master делает Push настроек
 Linux - SSh port 22
 
+7. ЗАПУСК AD-HOC команд
 
 9. ПЕРЕНОС ПЕРЕМЕННЫХ В group_vars
 ansible-inventory --list
