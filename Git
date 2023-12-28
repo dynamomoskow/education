@@ -19,4 +19,4 @@ git push -u origin master
 
 
 gitlens plagin
-
+git remote set-url origin https://github.com/dynamomoskow/deploy_nginx_docker
