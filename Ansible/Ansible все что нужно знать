@@ -5,7 +5,9 @@ ansible all_groups -i hosts -m setup
 ansible all -i hosts -m shell -a "uptime"
 ansible all -i hosts -m command -a "cal"
 ansible all -i hosts -m file -a "path=/root/ansible-file.txt state=touch" -b
+
 sudo visudo 
+user ALL=(ALL:ALL) NOPASSWD:ALL
 
 ansible test -i hosts -m copy -a "src=file123 dest=/home mode=777" - копирование файла 
 ansible test -i hosts -m copy -a "src=file123 dest=/home mode=600" -b
