@@ -1,0 +1,24 @@
+Типы виртуализации:
+- ПРограммная виртуализация:
+  -Динамическая трансляция(VirtualBox)
+  -Паравиртуализация (Xen)
+- Аппаратная виртуализация (KVM, Xen, Vmware, Hyper-v)
+
+Контейнеризация
+- Контейнеризация (LXC, OpenVZ. Jail, Zones) -виртуализация на уровне операционной системы
+
+КаК работает Docker
+- Namespaces
+- Cgroups
+- UnionFs
+- RunC
+
+Из чего состоит Docker:
+- DAemon
+- Client
+- Registry
+
+Docker daemon
+-Предоставдяет API
+-Управляет Docker-обьектами
+-Общается с другими docker-daemon
