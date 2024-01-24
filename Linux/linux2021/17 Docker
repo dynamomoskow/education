@@ -1,0 +1,19 @@
+Namespaces - изоляция окружения
+Control groups - ограничение реусурсов
+UnionFS - разделение по слоям
+
+Docker Сборка контейнеров
+ENV -переменные окружения
+ARG - переменные во время сборик
+COPY - скопировать файл или папку
+ADD - скопировать файл или паапку , скачать по ссылке, разархивировать архив
+EXPOSE - документация
+
+docker run -p 3030:80 nginx:1.25.3
+docker inspect 0b3b57ccb2ef
+docker logs 0b3b57ccb2ef
+docker logs - f 0b3b57ccb2ef
+docker exec -it 0b3b57ccb2ef /bin/bash
+docker system df
+docker rm $(docker ps -aq)
+docker container prune
