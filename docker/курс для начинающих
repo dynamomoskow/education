@@ -161,7 +161,10 @@ docker run --rm --name mydocker mydocker:v01 - запуск контейнера
 docker rmi image - remove image
 docker build -t myimage:v01 .
 docker run -it --rm --name mydocker myimage:v01 bash
+docker run -d --rm --name mydocker -p80:80 myimagex:v01
+docker run -d --rm --name mydocker -P myimagex:v02        -P автоматический проброс портов из EXPOSE
 
+docker run -d --rm --name mydocker2 -e TYPE=prod12345  myenv:v01    - запускаем с другой переменной
 
 
 
