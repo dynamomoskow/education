@@ -17,3 +17,20 @@ docker exec -it 0b3b57ccb2ef /bin/bash
 docker system df
 docker rm $(docker ps -aq)
 docker container prune
+docker network create mybridge
+docker network rm mybridge
+
+docker run --rm -d --name ubuntu1 ubuntu sleep 30
+docker run --rm -d --name ubuntu3 --network=mybridge ubuntu sleep 3000
+
+apt install iputils-ping
+apt install dnsutils
+dig +short ya.ru
+
+iptables -S
+iptables -S -t nat
+
+Docker volumes types:
+- tmpfs
+-  volume
+- bind mount
