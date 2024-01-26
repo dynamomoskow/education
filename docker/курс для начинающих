@@ -168,6 +168,14 @@ docker run -d --rm --name mydocker2 -e TYPE=prod12345  myenv:v01    - запус
 
 
 
+Docker compose
+- Используется для управления одним или несколькими контейнерами 
+- Содержит инструкции по запуску контейнера 
+- упрощает автоматизацию запуска контейнеров 
+- Описывается в YAML файле: docker-compose.yml
+
+docker compose up -d -запуск 
+docker compose logs web-server 
 
 
 
