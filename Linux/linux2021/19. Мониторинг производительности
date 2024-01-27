@@ -1,0 +1,34 @@
+uptime
+dmesg | tail
+vmstat 1
+mpstat -P ALL 1  - информация о процессорах(ядрах)
+pidstat 1 - статистика по пидам
+iostat -xz 1 - статистика по дискам
+free -m - свободное место
+sar -n DEV 1 -статистика сетевого использования 
+sar -n TCP,ETCP 1 
+top
+
+cat /proc/loadavg - число процессов стоящих в очереди на исполнение 
+
+-strace
+- tcpdump
+- netstat/ss
+- nicstat
+- pidstat
+- swapon
+- lsof
+- sar
+
+advanced:
+- ltrace
+- ethtool 
+- iotop
+- blktrace
+- slabtop
+- /proc
+- pcstat
+CPU perf counters:
+- perf_events, tiptop, rdmsr
+Advanced trcers:
+- perf_events, ftrace, eBPF, dtrace, etc ...
