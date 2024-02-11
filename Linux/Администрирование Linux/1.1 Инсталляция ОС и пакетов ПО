@@ -1,3 +1,9 @@
 Режимы инсталляции
 - Интерактивный
 - Пакетный
+dpkg -l - список всех пакетов
+dpkg -L wget - информация о пакете 
+dpkg -S wget
+dpkg -s wget - статус паета
+dpkg -r wget - delete
+dpkg -l wget - состояние пакета
