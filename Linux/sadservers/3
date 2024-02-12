@@ -1,0 +1,8 @@
+grep -rc Alice *.txt  -- ищет рекурсивно совпадения и выводит только количество
+либо
+find . -type f -name "*.txt" |xargs grep -c 'Alice'   -- находит все файлы txt в каталоге и подкаталогах, утилита xargs принимает вывод find и передает его в grep, 
+которая подсчитывает количество совпадений в каждом файле
+echo -n 411 > /home/admin/solution
+grep Alice -A 1 /home/admin/1342-0.txt   -- ищет строки в файле и выводит их , а также следующую строку после каждого совпадения(-А 1)
+или less or vi file and enter /Alice
+echo 156 >> /home/admin/solution
