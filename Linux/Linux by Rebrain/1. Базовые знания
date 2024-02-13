@@ -1,0 +1,7 @@
+df -h
+df -hT
+cat /etc/fstab -точки монтирования
+dpkg -l | less
+dpkg -S /bin/ls - какому пакету принадлежит
+dpkg -L coreutils - что содержится в пакете
+sudo apt-get purge apache2*
