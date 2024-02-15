@@ -1,0 +1,1 @@
+journalctl SYSLOG_IDENTIFIER=sudo    -- журнал sudo
