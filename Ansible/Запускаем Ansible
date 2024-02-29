@@ -18,3 +18,11 @@ Cloud (https://oreil.ly/0xeNu);
 • Messaging (https://oreil.ly/aTOvP);
 • Packaging (https://oreil.ly/71GLO);
 • Windows (https://oreil.ly/c8NwK).
+
+
+ПРоверка 
+$ ansible-playbook --syntax-check webservers-tls.yml
+$ ansible-lint webservers-tls.yml
+$ yamllint webservers-tls.yml
+$ ansible-inventory --host testserver -i inventory/vagrant.ini
+$ vagrant validate
