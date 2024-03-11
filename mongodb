@@ -1,6 +1,12 @@
+https://gearmobile.github.io/mongodb/mongodb-documents/
 mongoshd
-show databases;
-use db;
-db.getCollectionInfos();
+db   текущая база данных
+show databases;  show dbs
+use db; создание базы либо переход в нее если уже создана
+db.dropDatabase() - удалить базу, нужно находиться в той базе которую хочешь удалить
+db.COLLECTION_NAME.drop()  удаление коллекции
+db.createCollection('name')  создать коллекцию name
+db.insects.insert({ name: 'cockroach' }) создать коллекцию insects(если ее нет), и добавить в нее документ
+db.getCollectionInfos(); 
 mongodump --db users-test-db --archive=/tmp/backup/test_dump.gz --gzip
 $(date +%y%m%d_%H%M%S).gz
