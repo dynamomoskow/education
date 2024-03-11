@@ -1,0 +1,6 @@
+mongoshd
+show databases;
+use db;
+db.getCollectionInfos();
+mongodump --db users-test-db --archive=/tmp/backup/test_dump.gz --gzip
+$(date +%y%m%d_%H%M%S).gz
