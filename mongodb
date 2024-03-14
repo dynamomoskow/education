@@ -9,5 +9,8 @@ db.createCollection('name')  создать коллекцию name
 db.insects.insert({ name: 'cockroach' }) создать коллекцию insects(если ее нет), и добавить в нее документ
 db.getCollectionInfos(); 
 mongodump --db users-test-db --archive=/tmp/backup/test_dump.gz --gzip
-sudo mongodump --db newdb --out /var/backups/mongobackups/`date +"%m-%d-%y"`
+sudo mongodump --db users-test-db --out /var/backups/mongobackups/`date +"%m-%d-%y"`
+mongodump --db users-test-db --out /tmp/backup/`date +"%d-%m-%y_%H:%M:%S"`
 $(date +%y%m%d_%H%M%S).gz
+
+journalctl -S today -u myMonitor.service
